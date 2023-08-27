@@ -15,7 +15,7 @@ def send_message(chat_id, text):
 def start(update):
     user_name = update['message']['from']['first_name']
     chat_id = update['message']['chat']['id']
-    response = f"Merhaba {user_name}, Ben Sahibim İle İletişim Kurmanız İçin Yaratılmış Basit Bir Botun.\n\nSpamınız Var İse Burdan Mesajınızı Yazabilirsiniz Sahibime ileteceğim.\n\nYazacağınız Örnek Metin: Merhaba Benim Spamım Var, Bana Yazar Mısın?"
+    response = f"Merhaba {user_name}, Ben Sahibim İle İletişim Kurmanız İçin Yaratılmış Basit Bir Botum.\n\nSpamınız Var İse Burdan Mesajınızı Yazabilirsiniz Sahibime ileteceğim.\n\nYazacağınız Örnek Metin: Merhaba Benim Spamım Var, Bana Yazar Mısın?"
     send_message(chat_id, response)
 
 def receive_message(update):
